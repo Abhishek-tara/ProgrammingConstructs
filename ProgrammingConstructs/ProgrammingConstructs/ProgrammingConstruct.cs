@@ -144,75 +144,17 @@ namespace ProgrammingConstruct
                 Console.WriteLine($"The Table of 2 * {i} = {2 * i}");
             }
         }
-        //Sum Of Square of n.
+        //Sum Of Square of number
         public void SumOfSquare()
         {
             Console.WriteLine("Enter the Number : ");
             int number = int.Parse(Console.ReadLine());
-            for(int i = 1; i <= number; i++)
+            int sqr = 0;
+            for (int i = 1; i <= number; i++)
             {
-                Console.WriteLine($"Sum of Square : {i * i}");
+                sqr = i * i;
             }
-        }
-        //Factorial
-        public void Factorial()
-        {
-            Console.WriteLine("Enter the number to find Factorial : ");
-            int value = int.Parse(Console.ReadLine());
-            int fact = 1;
-            int temp = value;
-            if (value == 0)
-            {
-                Console.WriteLine("Factoria of Zero is Zero");
-            }
-            else if(value < 0)
-            {
-                Console.WriteLine("Factorial of Negative Number is not Possible");
-            }
-            else
-            {
-                int i = 0;
-                while (i<value)
-                {
-                    fact = fact * value;
-                    value--;
-                }
-                Console.WriteLine($"Factorial of {temp} is {fact}");
-            }
-        }
-        //FlipCoin
-        public void FlipCoin()
-        {
-            int flipCoin = 1;
-            for (int i = 0; i < 20; i++)
-            {
-                Random random = new Random();
-                int value = random.Next(2);
-                if (flipCoin == value)
-                    Console.WriteLine($"It's Head");
-                else
-                    Console.WriteLine($"Its Tail");
-            }    
-        }
-        //Reverse Given String
-        public void ReverseString()
-        {
-            Console.WriteLine("Enter the string");
-            string userstring = Console.ReadLine();
-            int length = userstring.Length;
-            char[] character = userstring.ToCharArray();
-            for(int p=length-1; p>=0; p--) 
-                Console.WriteLine($"{character[p]}");
-        }
-        //Sum of First 5 Natural Number.
-        public void NaturalNumber()
-        {
-            Console.WriteLine("Enter the Number upto 9");
-            int sum = 0;
-            int value = int.Parse(Console.ReadLine());
-            for (int p = 1; p <= value; p++)
-                sum = sum + p;
-            Console.WriteLine($"Sum of Natural Number : {sum}");  
+            Console.WriteLine("Square of a number is:" + sqr);
         }
     }
 }
