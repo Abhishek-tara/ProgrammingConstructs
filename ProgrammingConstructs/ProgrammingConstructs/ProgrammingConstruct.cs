@@ -193,26 +193,6 @@ namespace ProgrammingConstruct
                 else
                     Console.WriteLine($"Its Tail");
             }    
-        }
-        //Reverse Given String
-        public void ReverseString()
-        {
-            Console.WriteLine("Enter the string");
-            string userstring = Console.ReadLine();
-            int length = userstring.Length;
-            char[] character = userstring.ToCharArray();
-            for(int p=length-1; p>=0; p--) 
-                Console.WriteLine($"{character[p]}");
-        }
-        //Sum of First 5 Natural Number.
-        public void NaturalNumber()
-        {
-            Console.WriteLine("Enter the Number upto 9");
-            int sum = 0;
-            int value = int.Parse(Console.ReadLine());
-            for (int p = 1; p <= value; p++)
-                sum = sum + p;
-            Console.WriteLine($"Sum of Natural Number : {sum}");  
-        }
+        }       
     }
 }
