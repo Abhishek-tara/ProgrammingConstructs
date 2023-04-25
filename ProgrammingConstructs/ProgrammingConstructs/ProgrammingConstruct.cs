@@ -207,7 +207,7 @@ namespace ProgrammingConstruct
         //Sum of First 5 Natural Number.
         public void NaturalNumber()
         {
-            Console.WriteLine("Enter the Number upto 9");
+            Console.WriteLine("Enter the Number upto 5");
             int sum = 0;
             int value = int.Parse(Console.ReadLine());
             for (int p = 1; p <= value; p++)
